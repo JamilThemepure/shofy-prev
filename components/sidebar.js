@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 
-const Sidebar = () => {
+const Sidebar = ({isOpen ,setIsOpen}) => {
   return (
     <>
+    {isOpen && 
       <div className="offcanvas__content">
         <div className="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
           <div className="offcanvas__logo logo">
@@ -35,7 +36,8 @@ const Sidebar = () => {
             </ul>
           </nav>
         </div>
-      </div>
+      </div>    
+    }
     </>
   );
 };
