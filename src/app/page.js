@@ -51,7 +51,7 @@ const Home = () => {
                 </svg>
                 </button>
             </div>
-            {isOpen &&  <Sidebar />}
+            {isOpen &&  <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>
         </div>
         <div className={`body-overlay ${isOpen ? "opened" : ""}`} onClick={() => setIsOpen(false)} ></div>

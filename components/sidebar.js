@@ -18,19 +18,19 @@ const Sidebar = () => {
           <nav className="tp-main-menu-content">
             <ul>
               <li>
-                <a href="#homeDemos">Demos</a>
+                <a href="#homeDemos" onClick={ () => setIsOpen(false)}>Demos</a>
               </li>
               <li>
-                <a href="#shopDemos">Shop</a>
+                <a href="#shopDemos" onClick={ () => setIsOpen(false)}>Shop</a>
               </li>
               <li>
-                <a href="#shopDemos">Pages</a>
+                <a href="#shopDemos" onClick={ () => setIsOpen(false)}>Pages</a>
               </li>
               <li>
-                <a href="#elements">Elements</a>
+                <a href="#elements" onClick={ () => setIsOpen(false)}>Elements</a>
               </li>
               <li>
-                <a href="#features">Features</a>
+                <a href="#features" onClick={ () => setIsOpen(false)}>Features</a>
               </li>
             </ul>
           </nav>
